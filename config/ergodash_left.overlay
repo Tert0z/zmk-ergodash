@@ -1,7 +1,11 @@
+#include <dt-bindings/zmk/behaviors.h>
+
 / {
-    &mt {
-        tapping-term-ms = <150>;
-        flavor = "balanced";
+    behaviors {
+        mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+        };
     };
 };
-
