@@ -13,6 +13,16 @@
 #define RAISE   2
 
 / {
+    behaviors {
+        mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
