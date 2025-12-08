@@ -69,11 +69,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  */ /* FIXME boot and reset are not yet locale aware */
             bindings = <
-&none   &kp F1       &kp F2             &kp F3           &kp F4                 &kp F5     &none                  &none  &kp F6  &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
-&none   &none        &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &none      &none                  &none  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none    &kp F12
-&none   &none        &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp MINUS  &none                  &none  &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none    &none
-&trans  &bootloader  &sys_reset         &none            &none                  &kp EQUAL         &none   &none          &none   &kp N7        &kp N8        &kp N9        &none    &trans
-&trans  &none        &none              &trans           &trans                            &none  &trans  &trans  &none          &trans        &kp N0        &none         &none    &trans
+&none   &kp F1       &kp F2             &kp F3           &kp F4                 &kp F5     &bt BT_SEL 0                  &none  &kp F6  &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
+&none   &none        &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &none      &bt BT_SEL 1                  &none  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none    &kp F12
+&none   &none        &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp MINUS  &none                         &none  &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none    &none
+&trans  &bootloader  &sys_reset         &none            &none                  &kp EQUAL                &none   &none          &none   &kp N7        &kp N8        &kp N9        &none    &trans
+&trans  &none        &none              &trans           &trans                            &none         &trans  &trans  &none          &trans        &kp N0        &none         &none    &trans
             >;
         };
 
