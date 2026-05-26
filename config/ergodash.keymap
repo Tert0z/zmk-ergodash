@@ -32,7 +32,7 @@
         };
         brace: brace {
             compatible = "zmk,behavior-mod-morph";
-            label = "PAR";
+            label = "brace";
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
@@ -40,7 +40,7 @@
         };
         bracket: bracket {
             compatible = "zmk,behavior-mod-morph";
-            label = "PAR";
+            label = "bracket";
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
